@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Angular-latestVersion": {
+    "ag-grid": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/angular-latest-version",
+            "outputPath": "dist/ag-grid",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -32,12 +32,7 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [],
-            "server": "src/main.server.ts",
-            "prerender": true,
-            "ssr": {
-              "entry": "server.ts"
-            }
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -67,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Angular-latestVersion:build:production"
+              "buildTarget": "ag-grid:build:production"
             },
             "development": {
-              "buildTarget": "Angular-latestVersion:build:development"
+              "buildTarget": "ag-grid:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -78,7 +73,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "Angular-latestVersion:build"
+            "buildTarget": "ag-grid:build"
           }
         },
         "test": {
@@ -102,5 +97,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "477877bb-68d5-4157-b0cc-6fd7ee349873"
   }
 }

@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'Angular-latestVersion' title`, () => {
+  it(`should have the 'ag-grid' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Angular-latestVersion');
+    expect(app.title).toEqual('ag-grid');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, Angular-latestVersion');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, ag-grid');
   });
 });
